@@ -35,9 +35,9 @@ public class ContatoResource {
      */
     @GET
     @Produces(MediaType.APPLICATION_XML)
-    public String retornaNomeContato() {
+    public Contato retornaNomeContato() {
         //TODO return proper representation object
-        return "<nome>Vitor Oliveira da Silva</nome>";
+        return new Contato("Vitor Oliveira da Silva", "vitoro580@gmail.com");
     }
     
     // Exemplo de objeto a ser trafegado no SERVICE
